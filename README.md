@@ -49,7 +49,7 @@ Pastikan Anda memiliki Node.js dan npm terinstal di sistem Anda.
 3. **Jalankan aplikasi**:
    - Untuk menjalankan bot dengan kode pairing:
      ```bash
-     npm start -- --use-pairing-code
+     npm start
      ```
 
 ### Running on Termux/Linux/Windows/Pterodactyl Panel
