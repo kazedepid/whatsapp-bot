@@ -1,6 +1,6 @@
 # WhatsApp Bot
 
-Selamat datang di repositori **WhatsApp Bot** milik saya (kazedepid). Proyek ini adalah bot WhatsApp yang dirancang untuk memberikan berbagai fungsi otomatis dan interaksi yang menyenangkan di platform WhatsApp. Bot ini menggunakan pustaka **Baileys** untuk menghubungkan dan berinteraksi dengan API WhatsApp.
+Selamat datang di repositori **WhatsApp Bot** milik saya [(kazedepid)](https://github.com/kazedepid). Proyek ini adalah bot WhatsApp yang dirancang untuk memberikan berbagai fungsi otomatis dan interaksi yang menyenangkan di platform WhatsApp. Bot ini menggunakan pustaka **[Baileys](https://github.com/WhiskeySockets/Baileys)** untuk menghubungkan dan berinteraksi dengan API WhatsApp.
 
 ## Project Structure
 
@@ -27,7 +27,7 @@ const owner = [
 ]
 ```
 
-## Installation and Running
+## Getting Started
 
 ### Prerequisite
 
@@ -52,11 +52,10 @@ Pastikan Anda memiliki Node.js dan npm terinstal di sistem Anda.
      npm start
      ```
 
-### Running on Termux/Linux/Windows/Pterodactyl Panel
+### Deploy
 
-- **Termux**: Ikuti langkah instalasi di atas.
-- **Linux/Windows**: Pastikan Node.js telah terinstal, lalu ikuti langkah instalasi di atas.
-- **Panel Pterodactyl**: Upload semua file ke panel Anda, kemudian jalankan perintah instalasi dan start melalui terminal panel.
+- **Termux/Linux/Windows**: Pastikan Node.js telah terinstal, lalu ikuti langkah instalasi di atas.
+- **Panel Pterodactyl**: Upload semua file ke panel Anda, kemudian jalankan perintah instalasi dan start melalui terminal panel. Pastikan panelnya menggunakan egg Nodejs atau Bun.
 
 ## Explanation of Variables in handler.js
 
@@ -74,6 +73,7 @@ Pastikan Anda memiliki Node.js dan npm terinstal di sistem Anda.
 
 1. **Bug `usePrefix`**: Pengaturan `usePrefix` belum berfungsi sepenuhnya.
 2. **Bug Kode QR**: Terkadang saat menjalankan `node index.js`, QR code tidak ditampilkan dengan benar di terminal. Hal ini mungkin terjadi karena masalah dengan terminal yang digunakan atau pengaturan koneksi. Pastikan terminal mendukung tampilan QR code, atau gunakan metode pairing alternatif.
+3. **Bug windows**: Terkadang saat di windows, akan ada error message yang akan menghentikan pairing ke whatsapp lalu beberapa saat kemudian akan ter restart otomatis
 
 ## Lisensi
 
