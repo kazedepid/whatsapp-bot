@@ -1,4 +1,4 @@
-# WhatsApp Bot
+# WhatsApp Bot(STABLE WA BOT)
 
 Selamat datang di repositori **WhatsApp Bot** milik saya (kazedepid). Proyek ini adalah bot WhatsApp yang dirancang untuk memberikan berbagai fungsi otomatis dan interaksi yang menyenangkan di platform WhatsApp. Bot ini menggunakan pustaka **Baileys** untuk menghubungkan dan berinteraksi dengan API WhatsApp.
 
