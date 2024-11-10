@@ -13,7 +13,7 @@
         "baileys"
     ],
     "author": "kazedepid",
-    "repository": "kazedepid/whatsapp-bot",
+    "repository": "https://github.com/kazedepid/whatsapp-bot",
     "license": "MIT"
     "directories": {
         "lib": "lib",
