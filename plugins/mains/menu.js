@@ -5,8 +5,9 @@ import path from 'path'
 import fs from 'fs'
 
 const tags = {
-    'main': { emoji: '🏠', name: 'Utama' },
-    'owner': { emoji: '👤', name: 'Pemilik' }
+    'anime': { name: 'Anime' },
+    'main': { name: 'Utama' },
+    'owner': { name: 'Pemilik' }
 }
 
 export const cmd = {
@@ -20,9 +21,7 @@ export const cmd = {
         const ucapannye = ucapan() 
         let teks = `${ucapannye}\n`
             + `Sistem otomatis *Whatsapp Bot* yang di buat dengan *_baileys_* yang siap membantu anda.\n\n`
-            + `WhatsApp Bot@${version}\n\n`
-            + `◦  *Tanggal* · ${formatDateInTimeZone(currentDate, timeZone)}\n`
-            + `◦  *Jam* · ${formatDateInTimeZone(currentDate, timeZone).split(',')[1]} \n`
+            + `◦  *Waktu* · ${formatDateInTimeZone(currentDate, timeZone)}\n`
 
         for (const tag in tags) {
             teks += `\n*${tags[tag].name.toUpperCase()}*\n`
@@ -33,9 +32,10 @@ export const cmd = {
 
             filteredCommands.forEach(cmd => {
                 const commandDetails = cmd[Object.keys(cmd)[0]]
-                teks += `- ✗⃝${tags[tag].emoji}  ${prefix + commandDetails.name[0]}${commandDetails.detail?.use ? ` < *${commandDetails.detail.use}* >` : ''}${commandDetails.setting?.isNsfw ? `  (*+18*)` : ''}\n`
+                teks += `- ${prefix + commandDetails.name[0]}${commandDetails.detail?.use ? ` < *${commandDetails.detail.use}* >` : ''}${commandDetails.setting?.isNsfw ? `  (*+18*)` : ''}\n`
             })
         }
+        teks += `\n> Bot Ini menggunakan script: https://github.com/kazedepid/whatsapp-bot\n\n>\t\t\tWhatsApp Bot@${version}\n\n`
 
         if (teks.trim() === '') {
             teks = 'Tidak ada perintah yang ditemukan untuk kategori ini.'
