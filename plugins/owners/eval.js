@@ -2,8 +2,8 @@ import util from 'util'
 import store from '../../lib/src/store.js'
 
 export const cmd = {
-    name: ['eval'],
-    command: ['eval'],
+    name: ['>'],
+    command: ['>'],
     category: ['owner'],
     detail: {
         desc: 'Menjalankan evaluasi.',
@@ -13,7 +13,7 @@ export const cmd = {
         isOwner: true
     },
     async start(context) {
-        const { m, text, conn } = context
+        const { m, conn, text, args, prefix, command, status, isGroup, isPrivate, isOwner, isRegistered, isSuperAdmin, isAdmin, isBotAdmin, groupMetadata, groupName, participants, db, plugins } = context
         if (!text) return
 
         let evalCmd
