@@ -4,8 +4,6 @@ Selamat datang di repositori **WhatsApp Bot** milik saya [(kazedepid)](https://g
 
 Apa saja yang ada? **[ChangeLog](https://github.com/kazedepid/whatsapp-bot/blob/main/CHANGELOG.md)**
 
-## V1.0.0 -beta (release)
-
 ## Project Structure
 
 Berikut adalah penjelasan singkat untuk setiap file dalam proyek ini:
