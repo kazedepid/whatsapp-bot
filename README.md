@@ -76,6 +76,7 @@ Pastikan Anda memiliki Node.js dan npm terinstal di sistem Anda.
 1. **Bug `usePrefix`**: Pengaturan `usePrefix` belum berfungsi sepenuhnya.
 2. **Bug Kode QR**: Terkadang saat menjalankan `node index.js`, QR code tidak ditampilkan dengan benar di terminal. Hal ini mungkin terjadi karena masalah dengan terminal yang digunakan atau pengaturan koneksi. Pastikan terminal mendukung tampilan QR code, atau gunakan metode pairing alternatif.
 3. **Bug windows**: Terkadang saat di windows, akan ada error message yang akan menghentikan pairing ke whatsapp lalu beberapa saat kemudian akan ter restart otomatis
+4. **Bug React Sw**: Terkadang status hanya di liat saja tanpa memberi reaction 
 
 ## Lisensi
 
