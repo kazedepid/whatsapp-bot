@@ -2,7 +2,7 @@
 
 Selamat datang di repositori **WhatsApp Bot** milik saya [(kazedepid)](https://github.com/kazedepid). Proyek ini adalah bot WhatsApp yang dirancang untuk memberikan berbagai fungsi otomatis dan interaksi yang menyenangkan di platform WhatsApp. Bot ini menggunakan pustaka **[Baileys](https://github.com/WhiskeySockets/Baileys)** untuk menghubungkan dan berinteraksi dengan API WhatsApp.
 
-Apa saja yang ada? **[ChangeLog](
+Apa saja yang ada? **[ChangeLog](https://github.com/kazedepid/whatsapp-bot/blob/main/CHANGELOG.md)**
 
 ## V1.0.0 -beta (release)
 
