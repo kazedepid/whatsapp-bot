@@ -12,4 +12,4 @@ Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
 - memperluas evaluasi agar dapat mengakses variabel lain nya
 ==============
 
-## V1.0.0 -beta (release)
+## [V1.0.0 -beta]() (release)
