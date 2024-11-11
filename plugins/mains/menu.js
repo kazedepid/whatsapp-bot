@@ -5,7 +5,7 @@ import path from 'path'
 import fs from 'fs'
 
 const tags = {
-    'anime': { name: 'Anime' },
+    'admin': { name: 'Admin' },
     'main': { name: 'Utama' },
     'owner': { name: 'Pemilik' }
 }
