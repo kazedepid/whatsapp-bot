@@ -9,9 +9,18 @@ Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
   • Kick
   • Promote
   • Demote
+  
 - Menambahkan Fitur tools
   • Fetch
   • Dependents
+- Menambahkan Fitur Anime
+
+- Menambahkan beberapa function
+
+- Memperbaiki error di package.json && error lain nya
+
+- Menambahkan Fitur eval cjs
+
 - Menambahkan Read/React Sw
   • Read sw(normal)
   • React Sw(Bug)
