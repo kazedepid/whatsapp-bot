@@ -7,7 +7,8 @@ import fs from 'fs'
 const tags = {
     'admin': { name: 'Admin' },
     'main': { name: 'Utama' },
-    'owner': { name: 'Pemilik' }
+    'owner': { name: 'Pemilik' },
+    'tools': { name: 'Tools' },
 }
 
 export const cmd = {
