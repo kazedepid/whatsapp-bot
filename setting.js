@@ -12,4 +12,6 @@ const owner = [
 
 const defaultPrefix = ['/', '!', '#', '.', '-', '🗿']
 
-export { timeZone, owner, defaultPrefix }
+const EmojiSw = ["🖤", "🤎", "💜", "💙", "💚", "💛", "🧡", "❤️", "🤍"];
+
+export { timeZone, owner, defaultPrefix, EmojiSw }
