@@ -14,7 +14,7 @@ Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
   • Fetch
   • Dependents
 - Menambahkan Fitur Anime
-
+  • sfw&nsfw(on/off)
 - Menambahkan beberapa function
 
 - Memperbaiki error di package.json && error lain nya
