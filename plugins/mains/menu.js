@@ -6,9 +6,10 @@ import fs from 'fs'
 
 const tags = {
     'admin': { name: 'Admin' },
+    'anime': { name: 'Anime' },
     'main': { name: 'Utama' },
     'owner': { name: 'Pemilik' },
-    'tools': { name: 'Tools' },
+    'tools': { name: 'Tools' }
 }
 
 export const cmd = {
