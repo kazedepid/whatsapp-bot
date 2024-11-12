@@ -14,7 +14,7 @@
     ],
     "author": "kazedepid",
     "repository": "https://github.com/kazedepid/whatsapp-bot",
-    "license": "MIT"
+    "license": "MIT",
     "directories": {
         "lib": "lib",
         "plugins": "plugins"
