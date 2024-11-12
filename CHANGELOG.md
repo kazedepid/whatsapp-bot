@@ -9,6 +9,9 @@ Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
   • Kick
   • Promote
   • Demote
+- Menambahkan Fitur tools
+  • Fetch
+  • Dependents
 - Menambahkan Read/React Sw
   • Read sw(normal)
   • React Sw(Bug)
