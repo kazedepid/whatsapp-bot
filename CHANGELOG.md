@@ -3,6 +3,13 @@
 Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
 
 ==============
+## V1.0.3-beta
+- Menambahkan Fitur Download
+  • Aptoide
+
+- Merubah Tampilan menu
+
+==============
 ## V1.0.2-beta
 - Menambahkan Beberapa fitur admin
   • Add
