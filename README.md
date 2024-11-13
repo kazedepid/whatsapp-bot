@@ -4,6 +4,8 @@ Selamat datang di repositori **WhatsApp Bot** milik saya [(kazedepid)](https://g
 
 Apa saja yang ada? **[ChangeLog](https://github.com/kazedepid/whatsapp-bot/blob/main/CHANGELOG.md)**
 
+Contoh plugin? **[EXAMPLE](mttps://raw.githubusercontent.com/kazedepid/whatsapp-bot/refs/heads/main/plugins/example.js)**
+
 ## Project Structure
 
 Berikut adalah penjelasan singkat untuk setiap file dalam proyek ini:
