@@ -7,6 +7,7 @@ import fs from 'fs'
 const tags = {
     'admin': { name: 'Admin' },
     'anime': { name: 'Anime' },
+    'download': { name: 'Downloaders' },
     'main': { name: 'Utama' },
     'owner': { name: 'Pemilik' },
     'tools': { name: 'Tools' }
@@ -19,11 +20,13 @@ export const cmd = {
     detail: { desc: 'Menampilkan daftar semua perintah yang tersedia.' },
     async start({ m, conn, prefix, plugins }) {
         const { version } = JSON.parse(fs.readFileSync('./package.json', 'utf8'))
-        const currentDate = new Date() 
-        const ucapannye = ucapan() 
+        const currentDate = new Date()
+        const ucapannye = ucapan()
         let teks = `${ucapannye}\n`
             + `Sistem otomatis *Whatsapp Bot* yang di buat dengan *_baileys_* yang siap membantu anda.\n\n`
             + `◦  *Waktu* · ${formatDateInTimeZone(currentDate, timeZone)}\n`
+
+        let totalFitur = 0
 
         for (const tag in tags) {
             teks += `\n*${tags[tag].name.toUpperCase()}*\n`
@@ -32,12 +35,16 @@ export const cmd = {
             })
             console.log(`Perintah untuk kategori ${tags[tag].name}:`, filteredCommands)
 
-            filteredCommands.forEach(cmd => {
+            filteredCommands.forEach((cmd, index) => {
                 const commandDetails = cmd[Object.keys(cmd)[0]]
-                teks += `- ${prefix + commandDetails.name[0]}${commandDetails.detail?.use ? ` < *${commandDetails.detail.use}* >` : ''}${commandDetails.setting?.isNsfw ? `  (*+18*)` : ''}\n`
+                teks += `${index + 1}. ${prefix + commandDetails.name[0]}${commandDetails.detail?.use ? ` < *${commandDetails.detail.use}* >` : ''}${commandDetails.setting?.isNsfw ? `  (*+18*)` : ''}\n`
             })
+
+            totalFitur += filteredCommands.length
         }
-        teks += `\n> Bot Ini menggunakan script: https://github.com/kazedepid/whatsapp-bot\n\n>\t\t\tWhatsApp Bot@${version}\n\n`
+
+        teks += `\nTotal fitur: ${totalFitur}\n`
+        teks += `> Bot Ini menggunakan script: https://github.com/kazedepid/whatsapp-bot\n\n> WhatsApp Bot@${version}\n\n`
 
         if (teks.trim() === '') {
             teks = 'Tidak ada perintah yang ditemukan untuk kategori ini.'
