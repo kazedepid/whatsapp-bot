@@ -1,4 +1,4 @@
-# WhatsApp Bot(STABLE WA BOT)
+# WhatsApp Bot (STABLE WA BOT)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![GitHub contributors](https://img.shields.io/github/contributors/kazedepid/whatsapp-bot)
@@ -6,7 +6,7 @@
 
 Selamat datang di repositori **WhatsApp Bot** milik saya [(kazedepid)](https://github.com/kazedepid). Proyek ini adalah bot WhatsApp yang dirancang untuk memberikan berbagai fungsi otomatis dan interaksi yang menyenangkan di platform WhatsApp. Bot ini menggunakan pustaka **[Baileys](https://github.com/WhiskeySockets/Baileys)** untuk menghubungkan dan berinteraksi dengan API WhatsApp.
 
-Apa saja yang ada? **[ChangeLog](https://github.com/kazedepid/whatsapp-bot/blob/main/CHANGELOG.md)**
+Apa yang baru? **[ChangeLog](https://github.com/kazedepid/whatsapp-bot/blob/main/CHANGELOG.md)**
 
 Contoh plugin? **[Example](https://raw.githubusercontent.com/kazedepid/whatsapp-bot/refs/heads/main/plugins/example.js)**
 
@@ -53,6 +53,7 @@ Pastikan Anda memiliki Node.js dan npm terinstal di sistem Anda.
    ```bash
    npm install
    ```
+> NOTE: Kamu juga bisa menggunakan ```bun install``` agar proses instal depedensi lebih cepat (khusus windows dan linux)
 
 3. **Jalankan aplikasi**:
    - Untuk menjalankan bot dengan kode pairing:
@@ -60,7 +61,7 @@ Pastikan Anda memiliki Node.js dan npm terinstal di sistem Anda.
      npm start
      ```
 
-### Deploy
+### Deployment
 
 - **Termux/Linux/Windows**: Pastikan Node.js telah terinstal, lalu ikuti langkah instalasi di atas.
 - **Panel Pterodactyl**: Upload semua file ke panel Anda, kemudian jalankan perintah instalasi dan start melalui terminal panel. Pastikan panelnya menggunakan egg Nodejs atau Bun.
