@@ -8,6 +8,7 @@ Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
   • Aptoide
 
 - Merubah Tampilan menu
+- Support Channel
 
 ==============
 ## V1.0.2-beta
