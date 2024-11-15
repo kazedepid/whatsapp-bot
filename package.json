@@ -20,7 +20,7 @@
         "plugins": "plugins"
     },
     "dependencies": {
-        "@whiskeysockets/baileys": "github:amiruldev20/Baileys",
+        "@whiskeysockets/baileys": "^6.7.9",
         "awesome-phonenumber": "^6.9.0"
     }
 }
