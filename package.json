@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "@whiskeysockets/baileys": "github:amiruldev20/Baileys",
-        "awesome-phonenumber": "^6.9.0"
+        "awesome-phonenumber": "^6.9.0",
+        "your-api": "latest"
     }
 }
