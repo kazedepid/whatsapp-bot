@@ -6,6 +6,7 @@ import fs from 'fs'
 
 const tags = {
     'admin': { name: 'Admin' },
+    'ai': { name: 'AI' },
     'anime': { name: 'Anime' },
     'download': { name: 'Downloaders' },
     'main': { name: 'Utama' },
@@ -25,22 +26,17 @@ export const cmd = {
         let teks = `${ucapannye}\n`
             + `Sistem otomatis *Whatsapp Bot* yang di buat dengan *_baileys_* yang siap membantu anda.\n\n`
             + `◦  *Waktu* · ${formatDateInTimeZone(currentDate, timeZone)}\n`
-
         let totalFitur = 0
-
         for (const tag in tags) {
             teks += `\n*${tags[tag].name.toUpperCase()}*\n`
             const filteredCommands = plugins.commands.filter(cmd => {
                 return cmd[Object.keys(cmd)[0]].category.includes(tag)
             })
-            console.log(`Perintah untuk kategori ${tags[tag].name}:`, filteredCommands)
-
+            totalFitur += filteredCommands.length; 
             filteredCommands.forEach((cmd, index) => {
                 const commandDetails = cmd[Object.keys(cmd)[0]]
                 teks += `${index + 1}. ${prefix + commandDetails.name[0]}${commandDetails.detail?.use ? ` < *${commandDetails.detail.use}* >` : ''}${commandDetails.setting?.isNsfw ? `  (*+18*)` : ''}\n`
             })
-
-            totalFitur += filteredCommands.length
         }
 
         teks += `\nTotal fitur: ${totalFitur}\n`
