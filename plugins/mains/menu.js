@@ -5,13 +5,15 @@ import path from 'path'
 import fs from 'fs'
 
 const tags = {
-    'admin': { name: 'Admin' },
-    'ai': { name: 'AI' },
-    'anime': { name: 'Anime' },
-    'download': { name: 'Downloaders' },
-    'main': { name: 'Utama' },
-    'owner': { name: 'Pemilik' },
-    'tools': { name: 'Tools' }
+    'admin': { name: 'Admin Menu' },
+    'ai': { name: 'AI Menu' },
+    'anime': { name: 'Anime Menu' },
+    'download': { name: 'Downloaders Menu' },
+    'main': { name: 'Utama Menu' },
+    'owner': { name: 'Owner Menu' },
+    'religion': { name: 'Religions Menu' },
+    'searching': { name: 'Search Menu' },
+    'tools': { name: 'Tools Menu' }
 }
 
 export const cmd = {
