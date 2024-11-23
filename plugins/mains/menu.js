@@ -1,8 +1,9 @@
-import { formatDateInTimeZone } from '../../lib/src/func.js'
 import { timeZone } from '../../setting.js'
 import db from '../../lib/database.js'
 import path from 'path'
 import fs from 'fs'
+import yourApi from 'your-api'
+const { func } = yourApi
 
 const tags = {
     'admin': { name: 'Admin Menu' },
@@ -27,7 +28,7 @@ export const cmd = {
         const ucapannye = ucapan()
         let teks = `${ucapannye}\n`
             + `Sistem otomatis *Whatsapp Bot* yang di buat dengan *_baileys_* yang siap membantu anda.\n\n`
-            + `◦  *Waktu* · ${formatDateInTimeZone(currentDate, timeZone)}\n`
+            + `◦  *Waktu* · ${func.formatDateInTimeZone(currentDate, timeZone)}\n`
         let totalFitur = 0
         for (const tag in tags) {
             teks += `\n*${tags[tag].name.toUpperCase()}*\n`
@@ -62,7 +63,7 @@ function ucapan() {
         night: 'Selamat malam 🎑'
     }
 
-    const hour = formatDateInTimeZone(time, timeZone).split(',')[1].split(':')[0]
+    const hour = func.formatDateInTimeZone(time, timeZone).split(',')[1].split(':')[0]
 
     if (hour == 0) return greetings.midnight
     if (hour >= 6 && hour < 12) return greetings.morning
