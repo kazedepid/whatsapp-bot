@@ -1,3 +1,6 @@
+import yourApi from 'your-api'
+const { func } = yourApi
+
 import { plugins } from './lib/plugins.js'
 import { owner, defaultPrefix } from './setting.js'
 import { decodeJid } from './lib/src/func.js'
@@ -72,7 +75,7 @@ const handler = async (m, conn) => {
                             groupMetadata, groupName, participants, db, plugins
                         })
                     } catch (e) {
-                        console.error(e)
+                        console.log(func.colors(e, 'bgRed'))
                         if (e.name) {
                             if (before[name].setting?.error_react) await m.react('❌')
                             await m.reply(`*${e.name}* : ${e.message}`)
@@ -146,7 +149,7 @@ const handler = async (m, conn) => {
                                 groupMetadata, groupName, participants, db, plugins
                             })
                         } catch (e) {
-                            console.error(e)
+                            console.log(func.colors(e, 'bgRed'))
                             if (e.name) {
                                 if (cmd.setting?.error_react) await m.react('❌')
                                 await m.reply(`*${e.name}* : ${e.message}`)
@@ -159,7 +162,7 @@ const handler = async (m, conn) => {
 
         await printLog({ m, conn, args, command, groupName, isGroup, isCommand })
     } catch (e) {
-        console.error(e)
+        console.log(func.colors(e, 'bgRed'))
     }
 }
 

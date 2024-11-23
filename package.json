@@ -1,6 +1,6 @@
 {
     "name": "whatsapp-bot",
-    "version": "1.0.4-beta",
+    "version": "1.0.5",
     "description": "WhatsApp bot using the Baileys library",
     "main": "index.js",
     "type": "module",
@@ -22,6 +22,6 @@
     "dependencies": {
         "@whiskeysockets/baileys": "github:amiruldev20/Baileys",
         "awesome-phonenumber": "^6.9.0",
-        "your-api": "^1.0.5"
+        "your-api": "^1.0.7"
     }
 }
