@@ -3,6 +3,13 @@
 Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
 
 ==============
+## V1.0.5
+- Mengubah beberapa system 
+  • implementasi function 
+  • Tampilan Console log
+  • Menghilangkan beberapa kode yang tidak perlu
+
+==============
 ## [V1.0.3-beta](https://github.com/user-attachments/files/17806920/whatsapp-bot.zip) 
 - Menambahkan Fitur Download
   • Aptoide
