@@ -1,6 +1,6 @@
 {
     "name": "whatsapp-bot",
-    "version": "1.0.4-beta",
+    "version": "1.0.5",
     "description": "WhatsApp bot using the Baileys library",
     "main": "index.js",
     "type": "module",
