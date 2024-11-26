@@ -5,6 +5,7 @@ import { plugins } from './lib/plugins.js'
 import { owner, defaultPrefix } from './setting.js'
 import { decodeJid } from './lib/src/func.js'
 import { printLog } from './lib/src/print.js'
+import store from './lib/src/store.js'
 import db from './lib/database.js'
 
 const handler = async (m, conn) => {
@@ -12,7 +13,7 @@ const handler = async (m, conn) => {
         const setting = db.settings.get(conn.user.jid)
         const prefixList = (setting && setting.prefix.length) ? setting.prefix : defaultPrefix
 
-        let prefix = false
+        let prefix = ""
         for (const p of prefixList) {
             const trimmedPrefix = p.trim()
             if (trimmedPrefix === '' || m.text.startsWith(trimmedPrefix)) {
@@ -71,7 +72,7 @@ const handler = async (m, conn) => {
                     try {
                         await before[name].start({
                             m, conn, text, args, status,
-                            isGroup, isPrivate, isBroadcast, isOwner, isRegistered, isSuperAdmin, isAdmin, isBotAdmin, isBaileys,
+                            isGroup, store, isPrivate, isBroadcast, isOwner, isRegistered, isSuperAdmin, isAdmin, isBotAdmin, isBaileys,
                             groupMetadata, groupName, participants, db, plugins
                         })
                     } catch (e) {
@@ -144,7 +145,7 @@ const handler = async (m, conn) => {
 
                         try {
                             await cmd.start({
-                                m, conn, text, args, prefix, command, status,
+                                m, conn, text, store, args, prefix, command, status,
                                 isGroup, isPrivate, isOwner, isRegistered, isSuperAdmin, isAdmin, isBotAdmin,
                                 groupMetadata, groupName, participants, db, plugins
                             })
