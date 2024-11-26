@@ -8,6 +8,7 @@ Semua perubahan yang dilakukan pada proyek ini akan dicatat dalam file ini.
   • implementasi function 
   • Tampilan Console log
   • Menghilangkan beberapa kode yang tidak perlu
+  • Menambahkan system cmd reaction dan function nya
 
 ==============
 ## [V1.0.3-beta](https://github.com/user-attachments/files/17806920/whatsapp-bot.zip) 
